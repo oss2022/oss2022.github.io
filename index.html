@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OSS 2022</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+
+    .newsdatecol {
+
+      width: 22%;
+
+      top: 0;
+
+      font-weight:bold;
+
+      text-align:left;
+
+      margin-top: 0;
+
+      vertical-align: top !important;
+
+    }
+
+    .newscontentcol {
+
+      width: 75%;
+
+      padding-left:8px;
+
+      text-align:left;
+
+
+
+    }
+
+  </style>
+<style type="text/css">
+td {
+      text-align:center; /*设置水平居中*/
+      vertical-align:middle !important;/*设置垂直居中*/
+}
+
+</style>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.0.11/bootstrap-hover-dropdown.min.js"></script>
+
+  <script>
+
+      var datepager = 0;
+
+      function callDatePager(i) {
+
+        if(i==0) {
+
+          $("#date1").show();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+
+        } else if(i==1) {
+
+          $("#date1").hide();
+
+          $("#date2").show();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+
+        } else if(i==2) {
+
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").show();
+
+          $("#date4").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+
+
+        } else if(i==3) {
+
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").show();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+
+        } else if(i==4) {
+
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").show();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+
+        } else if(i==5) {
+
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").show();
+
+          $("#date7").hide();
+
+
+        } else if(i==6) {
+
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").show();
+
+        } else {
+          $("#date1").hide();
+
+          $("#date2").hide();
+
+          $("#date3").hide();
+
+          $("#date4").hide();
+
+          $("#date5").hide();
+
+          $("#date6").hide();
+
+          $("#date7").hide();
+        }
+
+      }
+
+
+
+      function nextDatePager() {
+
+        datepager = datepager + 1;
+
+        if(datepager == 7) datepager = 0;
+
+        callDatePager(datepager);
+
+      }
+
+
+
+      function prevDatePager() {
+
+        datepager = datepager - 1;
+
+        if(datepager == -1) datepager = 6;
+
+        callDatePager(datepager);
+
+      }
+
+
+
+      var filmpager = 0;
+
+      function callFilmPager(i) {
+
+       if(i==0) {
+
+          $("#film1").show();
+
+          $("#film2").hide();
+
+        } else if(i==1) {
+
+          $("#film1").hide();
+
+          $("#film2").show();
+
+        } else {
+
+          $("#film1").hide();
+
+          $("#film2").hide();
+
+        }
+
+      }
+
+
+
+      function nextFilmPager() {
+
+        filmpager = filmpager + 1;
+
+        if(filmpager == 2) filmpager = 0;
+
+        callFilmPager(filmpager);
+
+      }
+
+
+
+      function prevFilmPager() {
+
+        filmpager = filmpager - 1;
+
+        if(filmpager == -1) filmpager = 1;
+
+        callFilmPager(filmpager);
+
+      }
+
+
+
+      function setAnimation(id, effect) {
+
+        $("#"+id).removeClass().addClass(effect +' animated').
+
+        one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
+        });
+
+
+
+      }
+
+
+
+
+
+    $(document).ready(function(){
+
+
+
+    $('.pager .pulsante').click(function(e) {
+
+          $(this).blur();
+
+    });
+
+
+
+    callDatePager(datepager);
+
+    callFilmPager(filmpager);
+
+
+
+    /*
+
+    $("#mainTitle").click(function() {
+
+      setAnimation("mainTitle", "hinge");
+
+      setTimeout('setAnimation("mainTitle","bounceInRight");',3000);
+
+    });
+
+
+
+    $("#subTitle").click(function() {
+
+      setAnimation("subTitle", "hinge");
+
+      setTimeout('setAnimation("subTitle","bounceInLeft");',3000);
+
+    });
+
+    */
+
+    });
+
+    </script>
+
+</head>
+
+<body>
+
+  <script src="loadhead.js"></script>
+
+  <script>loadheaderexecute(1);</script>
+
+
+
+<div class="container">
+
+
+
+  <img src="img/circulo2.jpg" class="img-responsive " alt="Responsive image">
+  <table class="table table-bordered table-condensed" style="margin-top:5px;font-size:small;">
+
+            <thead>
+
+              <tr style=" background-color:#d9edf7;">
+                <th class="text-center">Tue Sept 6</th>
+                <th class="text-center">Wed Sept 7</th>
+                <th class="text-center">Thu Sept 8</th>
+                <th class="text-center">Fri Sept 9</th>
+                <th class="text-center">Sat Sept 10</th>
+              </tr>
+              <tr style=" background-color:#d9edf7;">
+                <td align="center"><b>Doctoral Symp.</b><a> <!-- <br><a href="social/Prereception.html">Pre-reception</a><br> -->
+                </td>
+                <td colspan="3" rowspan="2" align="center">
+                    <font size="+2"><strong>OSS 2022 + OpenSym 2022</stron></font>
+                </td>
+                <td colspan="3" rowspan="2" align="center">
+                    <b>Post-Conference<br/> <a href="social/Escorial.html">Cultural visit</a></b>
+                </td>
+              </tr>
+            </thead>
+          </table>
+
+
+
+
+
+  <div class="row">
+
+    <div class="col-xs-12">
+
+	<div class="row">
+
+
+
+
+
+    <div class="col-md-4" role="main">
+
+      <a href="https://twitter.com/OSSConference" class="btn btn-warning btn-default active" role="button">&nbsp; &nbsp; &nbsp; @OSSConferece &nbsp; &nbsp; &nbsp;</a>&nbsp;
+<!--      <a href="cfp/OpenSciencePractices.html" class="btn btn-warning btn-default active" role="button">Open science practices</a> -->
+
+      <br>
+      <br>
+
+      <div class="panel panel-primary">
+
+            <div class="panel-heading">
+
+              <h3 class="panel-title">Latest News</h3>
+
+            </div>
+
+            <div class="panel-body" style="pdding-bottom: 0;height: 285px;padding: 15px;">
+
+              <table>
+               <tr>
+
+                  <td class="newsdatecol">2021-05-30</td>
+
+                  <td class="newscontentcol">OSS 2022 website is up and running!</td>
+
+                </tr>
+              </table>
+
+            </div>
+
+            <div class="panel-footer text-right">
+              <a href="news.html">More</a>
+            </div>
+
+      </div>
+
+
+<!--
+      <div class="panel panel-danger">
+
+        <div class="panel-heading">
+
+          <h3 class="panel-title">Important Dates</h3>
+
+        </div>
+
+        <div class="panel-body" style="pdding-bottom: 0;height: 228px;padding: 0 15px;">
+
+          <div id="date1" style="display: block;">
+
+            <h4 style="width:100%; text-align: center;">Research Track</h4>
+
+            <p>Abstract Submission: TBD</p>
+
+            <p>Paper Submission: TBD</p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;"> Monday, June 12, 2017</span></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">Thursday, August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date2" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">NIER Track</h4>
+
+            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
+
+            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date3" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Industry Track</h4>
+
+            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
+
+            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 29, 2017</span></p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date4" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Tool Demo Track</h4>
+
+            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
+
+            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date5" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Artifacts Track</h4>
+
+            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">Monday, June 26, 2017</span></p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;">Friday, July 21, 2017</span></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">Thursday, August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date6" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
+
+            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">July 10, 2017</span></p>
+
+            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
+
+            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
+
+          </div>
+
+          <div id="date7" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Journal First Presentations</h4>
+
+            <p>Submission:<span style="float:right;text-decoration:line-through;">June 8, 2017</span></p>
+
+            <p>Notification:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
+
+
+
+          </div>
+
+          <br>
+
+          <ul class="pager" style="margin: 3px 5px 0 5px;">
+
+            <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a></li>
+
+            <li class="next"><a href="javascript:nextDatePager();">&raquo;</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+-->
+
+
+ </div>
+
+    <div class="col-md-8">
+
+      <h2>Welcome</h2>
+
+      <hr>
+      <p style="font-size:16px; text-indent:2em; text-align:justify;">
+        <strong>The 18th International Conference on Open Source Systems (OSS)</strong> aims at providing an international forum where a diverse community of professionals from academia, industry, and the public sector, and diverse FLOSS initiatives can come together to share research findings and practical experiences. The conference is also a forum to provide information and education to practitioners, identify directions for further research, and to be an ongoing platform for technology transfer, no matter which form of FLOSS is being pursued.
+      </p>
+
+      <p style="font-size:16px; text-indent:2em; text-align:justify;">
+
+        OSS 2022, the 18th in the conference series, will be held in Madrid, Spain. Madrid lies on the River Manzanares in the centre of both Spain. As the capital city of Spain, seat of government, and residence of the Spanish monarch, Madrid is also the political, economic and cultural centre of Spain.
+      </p>
+
+      <p style="font-size:16px; text-indent:2em; text-align:justify;">
+
+        While Madrid possesses modern infrastructure, it has preserved the look and feel of many of its historic neighbourhoods and streets. Its landmarks include the Royal Palace of Madrid; the Royal Theatre with its restored 1850 Opera House; the Buen Retiro Park, founded in 1631; and the Golden Triangle of Art, located along the Paseo del Prado and comprising three art museums: Prado Museum, the Reina Sofía Museum, a museum of modern art, and the Thyssen-Bornemisza Museum, which completes the shortcomings of the other two museums -- a more detailed Madrid travel guide can be found at <a href="https://www.esmadrid.com/en">https://www.esmadrid.com/en</a>.
+
+      </p>
+
+      <hr>
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <hr style="height:
+
+  <footer class="oss2022" role="contentinfo" >
+
+  <div class="container">
+
+    <div class="row">
+
+      <p class="lead text-center">Sponsors</p>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12">
+
+        <a style="border:0;" href="https://www.ifip.org/" class="thumbnail"><img src="https://www.oss2021.org/getLogo/0a12b02d-dd2f-45a1-8801-fadde8edf883?1607346192000" alt="IFIP" width="300"></a>
+
+      </div>
+<!--
+      <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+
+        <a style="border:0;" href="http://www.computer.org/portal/web/tcse/home" class="thumbnail"><img src="img/ieee-tcse.jpg" alt="IEEE Technical Council on Software Engineering"></a>
+
+      </div>
+-->
+    </div>
+
+    <div class="row">
+
+      <p class="lead text-center">Patrons</p>
+
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-12">
+
+        <a style="border:0;" href="http://www.urjc.es" class="thumbnail"><img src="img/urjc.jpg" alt="Universidad Rey Juan Carlos"></a>
+
+      </div>
+
+<!--
+      <div class="col-xs-4">
+
+        <a style="border:0;" href="http://software.imdea.org" class="thumbnail"><img src="img/imdea.jpeg" alt="IMDEA Software Institute"></a>
+
+      </div>
+-->
+      <div class="col-xs-2"></div>
+
+    </div>
+
+    <br/>
+
+          <p class="lead text-center">Supporters</p>
+    <br/>
+<!--
+    <div class="row">
+
+      <div class="col-xs-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+
+        <a style="border:0;" href="https://itestra.com/en/" class="thumbnail"><img src="img/itestra.png" alt="itestra GmbH"></a>
+
+      </div>
+
+      <div class="col-xs-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+
+        <a style="border:0;" href="https://sourced.tech/" class="thumbnail"><img src="img/sourced.png" width="381" height="126" alt="source{d}"></a>
+
+      </div>
+
+      <div class="col-xs-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+
+        <a style="border:0;" href="https://www.cqse.eu/en/" class="thumbnail"><img src="img/cqse.jpg" alt="CQSE"></a>
+
+      </div>
+
+      <div class="col-xs-3 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+
+        <a style="border:0;" href="http://www.bitergia.com" class="thumbnail"><img src="img/bitergia.png" alt="Bitergia"></a>
+
+      </div>
+-->
+    </div>
+
+    <br/>
+
+  </footer>
+
+
+
+</body>
+
+</html>
