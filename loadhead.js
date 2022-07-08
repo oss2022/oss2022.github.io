@@ -135,12 +135,12 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
 var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 
 li_cfp.find('ul').append('<li><a href="'+RegularPapersCFP+'">Regular Papers</a></li>');
-//li_cfp.find('ul').append('<li><a href="'+IndustryTrackCFP+'">Industry Track</a></li>');
+li_cfp.find('ul').append('<li><a href="'+IndustryTrackCFP+'">Experience Reports</a></li>');
 //li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
-//li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
+li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
 //li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');
 //li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
-//li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
+li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
 
 navbarcollapseul.append(li_cfp);
 
