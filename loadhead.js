@@ -115,7 +115,8 @@ var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbaru
 
 
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
-// vbarcollapseul.append(li_registration);
+navbarcollapseul.append(li_registration);
+
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 	li_program.find('ul').append('<li><a href="'+Scheduleurl+'">Schedule</a></li>');
