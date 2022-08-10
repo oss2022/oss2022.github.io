@@ -166,7 +166,7 @@ navbarcollapseul.append(li_socialevents);
 var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_team.find('ul').append('<li><a href="http://ifipwg213.org/">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
-//li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
+li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 //li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Student Volunteers</a></li>');
 //li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
 //li_team.find('ul').append('<li><a href="'+externalreviewers+'">External Reviewers</a></li>');
