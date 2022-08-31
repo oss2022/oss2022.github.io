@@ -120,7 +120,7 @@ navbarcollapseul.append(li_registration);
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 	li_program.find('ul').append('<li><a href="'+Scheduleurl+'">Schedule</a></li>');
-/*    li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>'); */
+    li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>'); 
 	li_program.find('ul').append('<li><a href="'+Sessionsurl+'">Sessions</a></li>');
 /*    li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>'); */
 /*    li_program.find('ul').append('<li><a href="'+awards+'">Award Winners</a></li>'); */
