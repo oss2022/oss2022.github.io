@@ -36,6 +36,7 @@ if (level==1) {
   var conduct = "social/CodeOfConduct.html";
   var escorialurl = "social/Escorial.html";
 	var awards = "program/Awards.html";
+  var companion = "opensym22-companion.zip";
 /*
 	var prereceptionurl = "social/Prereception.html";
 */
@@ -92,6 +93,7 @@ else if (level>=2) {
 	var Scheduleurl = "../program/schedule.html";
 	var Sessionsurl = "../program/SessionList.html";
 	var awards = "../program/Awards.html";
+	var companion = "../opensym22-companion.zip";
     var yearbook = "https://gsyc.urjc.es/~grex/2022-OSS-Confbook.pdf";
     
 /*
@@ -125,7 +127,7 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
 	li_program.find('ul').append('<li><a href="'+Sessionsurl+'">Sessions</a></li>');
 /*    li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>'); */
     li_program.find('ul').append('<li><a href="'+awards+'">Award Winners</a></li>');
-
+    li_program.find('ul').append('<li><a href="'+companion+'">Companion Volume</a></li>');
 
 //    li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
 
